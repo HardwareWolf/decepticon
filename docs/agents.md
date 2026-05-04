@@ -1,6 +1,6 @@
 # Agents
 
-Decepticon ships **17 specialist agents** organized by kill chain phase. Each agent starts with a **fresh context window** per objective — no accumulated noise, no context degradation. Findings persist to disk (`workspace/`) and the knowledge graph, not agent memory.
+Decepticon ships **16 specialist agents** organized by kill chain phase. Each agent starts with a **fresh context window** per objective — no accumulated noise, no context degradation. Findings persist to disk (`workspace/`) and the knowledge graph, not agent memory.
 
 ---
 
@@ -38,12 +38,6 @@ Sub-agents of the **Vulnresearch** orchestrator. State flows between stages via 
 |-------|------|
 | **Exploit** | Initial access and exploitation tactics. Web/AD attacks (SQLi, SSTI, Kerberoasting, ADCS abuse, credential attacks). |
 | **Post-Exploit** | Privilege escalation, lateral movement, credential harvesting, persistence. Operates via C2 sessions once initial access is established. |
-
-### Defense
-
-| Agent | Role |
-|-------|------|
-| **Defender** | Standalone graph for the Offensive Vaccine loop. Receives a defense brief for each finding, applies mitigations, and tracks results in the knowledge graph. |
 
 ### Domain Specialists
 
