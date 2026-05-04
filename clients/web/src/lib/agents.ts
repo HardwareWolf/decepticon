@@ -100,6 +100,12 @@ export const AGENT_DISPLAY_CONFIG: Record<string, AgentDisplayMeta> = {
     role: "Post-Exploitation",
     color: "#10b981",
   },
+  vulnresearch: {
+    name: "Vulnresearch",
+    description: "Vulnerability research orchestrator — five-stage pipeline",
+    role: "Vulnerability Research",
+    color: "#dc2626",
+  },
   analyst: {
     name: "Analyst",
     description: "Deep vulnerability analysis — SSRF, SQLi, XSS chains",
