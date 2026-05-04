@@ -130,7 +130,7 @@ jobs:
       # invalidated when dependencies actually change.
       - name: Cache .venv
         id: venv-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .venv
           key: venv-${{ runner.os }}-py3.13-${{ hashFiles('uv.lock', 'pyproject.toml') }}
